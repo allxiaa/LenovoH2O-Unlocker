@@ -28,7 +28,7 @@ jobs:
       run: msbuild /m /p:Configuration=Release /p:Platform="x64" ./Unlocker.sln
 
     - name: Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         draft: true
         files: .\x64\Release\Unlocker.exe
